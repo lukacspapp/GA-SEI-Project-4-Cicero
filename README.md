@@ -151,9 +151,11 @@ Our **MVP** was to ensure that there is a smooth exchange of image data between 
 
 On the backend, I have four models: User, Product, Order and Category.
 
-### User Model  
+### User
 
-Django by defult gives a user model whereby it uses the username to verfy the user. I wanted to use the eamil address to verify the user so i created the a custom user with <code>AbstractUser</code>
+[User File](https://github.com/lukacspapp/SEI-Project-4-Cicero/tree/main/lcodev/api/user)
+
+Django by defult gives a user model whereby it uses the username to verfy the user. I wanted to use the eamil address to verify the user so I created the a custom user with <code>AbstractUser</code>
 
 [User Model](https://github.com/lukacspapp/SEI-Project-4-Cicero/blob/main/lcodev/api/user/models.py)
 
@@ -178,18 +180,27 @@ Django by defult gives a user model whereby it uses the username to verfy the us
     
     
 
-The Image Model was the main model. It was use to apply filters and return the base64 image back to the frontend. We send the width and height from the frontend as well, so images are returned with the exact dimensions:
-    
-    class Image(models.Model):
-        url = models.TextField()
-        filter_type = models.CharField(
-            max_length=10, null=True, validators=[validate_filter])
-        filter_options = models.CharField(max_length=200, null=True)
-        width = models.IntegerField(null =True)
-        height = models.IntegerField(null = True)
-    
-        def __str__(self):
-            return f'{self.url}'
+### Product
+
+[Product file](https://github.com/lukacspapp/SEI-Project-4-Cicero/tree/main/lcodev/api/product)
+
+
+[Product model](https://github.com/lukacspapp/SEI-Project-4-Cicero/blob/main/lcodev/api/product/models.py)
+
+
+```
+class Product(models.Model):
+    name = models.CharField(max_length = 50)
+    description = models.CharField(max_length = 300)
+    price = models.CharField(max_length = 50)
+    stock = models.CharField(max_length = 50)
+    is_active = models.BooleanField(default = True, blank = True)
+    image = models.ImageField(upload_to ='images/', blank = True, null = True) # I alredy indicated to Django that itt will be in /media and now I specified this will be coming from /media/images
+    category = models.ForeignKey(Category, on_delete = models.SET_NULL, blank = True, null = True) # this field is linked to Category model
+    created_at = models.DateTimeField(auto_now_add = True) # it is created that is why is True not now if it would be updated_at it would be now
+    updated_at = models.DateTimeField(auto_now = True)
+```
+
 
     
 The Filter model was created to create the database of filter options from the seeds file.
