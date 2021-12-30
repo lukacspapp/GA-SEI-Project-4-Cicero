@@ -182,10 +182,10 @@ Django by defult gives a user model whereby it uses the username to verfy the us
 
 ### Product
 
-[Product file](https://github.com/lukacspapp/SEI-Project-4-Cicero/tree/main/lcodev/api/product)
+[Product File](https://github.com/lukacspapp/SEI-Project-4-Cicero/tree/main/lcodev/api/product)
 
 
-[Product model](https://github.com/lukacspapp/SEI-Project-4-Cicero/blob/main/lcodev/api/product/models.py)
+[Product Model](https://github.com/lukacspapp/SEI-Project-4-Cicero/blob/main/lcodev/api/product/models.py)
 
 
 ```
