@@ -109,12 +109,12 @@ https://the-filtr-app.herokuapp.com/
 https://github.com/purvitrivedi/image-editing-app
 
 - Clone or download the repo
-- <code>pipenv</code> to install Python packages
-- <code> python manage.py loaddata images/seeds.json</code>to load filters from the database
+- <code>cd lcodev</code> to go to the folder
+- <code>pipenv shell</code> to install Python packages
+- <code> python3 manage.py startserver</code> to start the backend 
 - <code>cd frontend</code> to go to the frontend directory
 - <code>npm i</code> to install frontend dependencies
-- <code>npm run build</code>
-- go back to main directory and run <code>python manage.py runserver</code> to start the app
+- <code>npm start</code> to start the app
 
 # Process
 
