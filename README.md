@@ -173,9 +173,28 @@ We pair-coded on "Save Image" feature and anytime we needed to talk through a ch
 
 ## Backend
 
-On the backend, we have three models: Image, Filter and User. George started working on structure of the Image Model, while I worked on the User Model.
+On the backend, I have four models: User, Product, Order and Category.
 
-### Image & Filter model, view, urls
+### User Model
+
+```
+    name = models.CharField(max_length = 50, default = 'Customer') 
+    email = models.EmailField(max_length = 200, unique = True)
+    
+    username = None # because I do not want to sign in the user with username but with EMAIL
+
+    USERNAME_FIELD = 'email' # so the username field will be governed by the email
+    REQUIRED_FIELDS = []
+
+    phone = models.CharField(max_length = 50, blank = True, null = True)
+    
+    session_token = models.CharField(max_length = 10, default = 0) 
+
+    created_at = models.DateTimeField(auto_now_add = True)
+    updated_at = models.DateTimeField(auto_now = True)
+```    
+    
+    
 
 The Image Model was the main model. It was use to apply filters and return the base64 image back to the frontend. We send the width and height from the frontend as well, so images are returned with the exact dimensions:
     
