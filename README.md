@@ -184,6 +184,8 @@ Django by defult gives a user model whereby it uses the username to verfy the us
 
 [Product File](https://github.com/lukacspapp/SEI-Project-4-Cicero/tree/main/lcodev/api/product)
 
+I designed the product model with a couple of fields that I wanted to display to the user such <code>stock</code> and <code>category</code> but I have run out of time.
+
 
 [Product Model](https://github.com/lukacspapp/SEI-Project-4-Cicero/blob/main/lcodev/api/product/models.py)
 
@@ -201,43 +203,10 @@ class Product(models.Model):
     updated_at = models.DateTimeField(auto_now = True)
 ```
 
+### Order
 
-    
-The Filter model was created to create the database of filter options from the seeds file.
 
-The views.py and urls.py have 3 main requests: 
 
-* path '': GET to see all Images Uploaded, POST to upload a new image and get a URL/base64 in response
-* path'<int:pk>/': GET a single Image
-* path'thumbnails/': GET a list of thumbnails
-
-Image POST request:
-
-<img src="frontend/src/assets/viewspy.png" alt="Views flowchart">
-
-Thumbnails GET Request:
-
-<img src="frontend/src/assets/thumbnails.png" alt="thumbnails flowchart" width= "800px">
-
-Thumbnails example for the tint filter:
-
-    def get_sketch_thumbs(img, page):
-
-    thumb_dictionaries = []
-
-    page_index_start = (page - 1) * 10
-
-    sketch_options = Filter.objects.filter(related_filter='sketch')[
-        page_index_start:page_index_start + 10]
-
-    for color in sketch_options:
-        file_name = sketch(img, color.filter_option, thumbnail=True)
-        encoded_image = str(base64.b64encode(
-            open(f'{file_name}.png', 'rb').read()))[2:-1]
-        thumb_dictionaries.append(
-            {'option': color.filter_option, 'image': f'data:image/png;base64,{encoded_image}'})
-        os.remove(f'{file_name}.png')
-    return thumb_dictionaries
 
 ## Frontend
 
