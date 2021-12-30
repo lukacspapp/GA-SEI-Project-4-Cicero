@@ -151,7 +151,7 @@ Our **MVP** was to ensure that there is a smooth exchange of image data between 
 
 On the backend, I have four models: User, Product, Order and Category.
 
-### User Model
+[### User Model](https://github.com/lukacspapp/SEI-Project-4-Cicero/blob/main/lcodev/api/user/models.py) 
 
 Django by defult gives a user model whereby it uses the username to verfy the user. I wanted to use the eamil address to verify the user so i created the a custom user with <code>AbstractUser</code>
 
