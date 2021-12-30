@@ -141,7 +141,7 @@ For the Wireframes I used Figma to design the pages.
 
 <img src='https://i.imgur.com/cxA5iDw.png'>
 
-We decided to go for a simple 3-page layout: when the user uploads an image, plays around with filters and then saves it.
+I decided to concentrate the most on the backend for this project as I was focusing on frontend and design in previous projects
 
 <img src="frontend/src/assets/miro.png" alt="Miro" width="600px">
 
