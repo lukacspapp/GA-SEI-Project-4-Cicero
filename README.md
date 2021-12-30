@@ -153,6 +153,8 @@ On the backend, I have four models: User, Product, Order and Category.
 
 ### User Model
 
+Django by defult gives a user model whereby it uses the username to verfy the user. I wanted to use the eamil address to verify the user so i created the a custom user with <code>AbstractUser</code>
+
 ```
  class CustomUser(AbstractUser):
     name = models.CharField(max_length = 50, default = 'Customer') 
