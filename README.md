@@ -128,7 +128,7 @@ For my final project, I wanted to push myself and build an e-commerce applicatio
 
 I used Coggle to create the ERD.
 
-[Link] (https://coggle.it/diagram/Yc3s-714-CArCURa/t/api/42b5fac89eb8a53f334c3418cc49c688752ec1b0e362d66e362e225bf71f8fbc) to the diagram 
+[Link ](https://coggle.it/diagram/Yc3s-714-CArCURa/t/api/42b5fac89eb8a53f334c3418cc49c688752ec1b0e362d66e362e225bf71f8fbc) to the diagram 
 
 <img src='https://i.imgur.com/SfyWMkE.png'>
 
@@ -137,7 +137,7 @@ I used Coggle to create the ERD.
 
 For the Wireframes I used Figma to design the pages.
 
-[Link] (https://www.figma.com/file/m4Qy4CCQRq71Y7xw1kbif4/ECOMMERCE-Project-4?node-id=0%3A1) to the wireframes
+[Link ](https://www.figma.com/file/m4Qy4CCQRq71Y7xw1kbif4/ECOMMERCE-Project-4?node-id=0%3A1) to the wireframes
 
 <img src='https://i.imgur.com/cxA5iDw.png'>
 
