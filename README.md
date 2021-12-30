@@ -97,7 +97,7 @@ Design a full-stack React app using Python, Django and PostgreSQL.
 
 An E-Commerce website that sells hipster hats
 
-Cicero Home Page
+
 <img src='https://i.imgur.com/9uTqWSf.png'>
 
 
