@@ -143,33 +143,9 @@ For the Wireframes I used Figma to design the pages.
 
 I decided to concentrate the most on the backend for this project as I was focusing on frontend and design in previous projects
 
-<img src="frontend/src/assets/miro.png" alt="Miro" width="600px">
 
 Our **MVP** was to ensure that there is a smooth exchange of image data between the frontend and the backend. If we were able to reach that goal quickly, we would add CSS filters.
 
-### Split of work
-
-George and I used a trello board to divide up tasks between us:
-
-<img src="frontend/src/assets/trello.png" alt="Trello">
-
-George took ownership of:
-
-* Proof of Concept for: Tint, Histogram, Artish Brush filters 
-* Image model routing
-* Ensuring text on memes were centered and sized depending on user's input.
-* Thumbnail generation
-* CSS + Konva Filters.
-
-I took ownership of:
-
-* Proof of Concept for Meme Filter
-* Selecting filter options and quality control for Tint, Histogram & Artist Brush filters
-* Ensuring users are able to memify an image with a filter on it
-* Front-end styling for all pages
-* Resetting filters & hover effect.
-
-We pair-coded on "Save Image" feature and anytime we needed to talk through a challenge or fix bugs.
 
 ## Backend
 
@@ -178,6 +154,7 @@ On the backend, I have four models: User, Product, Order and Category.
 ### User Model
 
 ```
+ class CustomUser(AbstractUser):
     name = models.CharField(max_length = 50, default = 'Customer') 
     email = models.EmailField(max_length = 200, unique = True)
     
@@ -192,6 +169,7 @@ On the backend, I have four models: User, Product, Order and Category.
 
     created_at = models.DateTimeField(auto_now_add = True)
     updated_at = models.DateTimeField(auto_now = True)
+
 ```    
     
     
