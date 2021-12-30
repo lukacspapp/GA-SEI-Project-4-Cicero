@@ -126,7 +126,9 @@ For my final project, I wanted to push myself and build an e-commerce applicatio
 
 ### Entity-Relationship-Diagram (ERD)
 
-[Link](https://coggle.it/diagram/Yc3s-714-CArCURa/t/api/42b5fac89eb8a53f334c3418cc49c688752ec1b0e362d66e362e225bf71f8fbc)to the diagram 
+I used Coggle to create the ERD.
+
+[Link] (https://coggle.it/diagram/Yc3s-714-CArCURa/t/api/42b5fac89eb8a53f334c3418cc49c688752ec1b0e362d66e362e225bf71f8fbc)to the diagram 
 
 <img src='https://i.imgur.com/SfyWMkE.png'>
 
