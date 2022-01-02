@@ -238,6 +238,22 @@ The Frontend was built using React Hooks and for the sytling I choosed Bootstrap
 <img src='https://i.imgur.com/9uTqWSf.png'> 
 
 
+What I did differently in this project is that I called my api outside of the components in a separete file [coreapicalls.js](https://github.com/lukacspapp/SEI-Project-4-Cicero/edit/main/lcodev/front-end/src/core/helper/coreapicalls.js) which is made my code much more readable when I needed to revisit the file.
+
+```
+
+const getProducts = async () => {
+  return fetch('http://127.0.0.1:8000/api/product', { method: 'GET' }).then((response) => {
+    return response.json()
+  })
+    .catch((err) => console.log(err))
+}
+
+export default getProducts
+```
+
+
+
 
 
 
