@@ -185,7 +185,7 @@ export default getProducts
        
          
 
-## Challenges
+## Challenges 🧗‍♂️
 
 **Payment**: Definitely the most challenging was to implement the payment function as I was having difficulties understanding Braintree's documentation, but after rereading, researching, many trial and error I figured it out! I was really happy with this one! For card number please use `4111 1111 1111 1111` and for the expiery date just use a future date exp: 05/25
 
@@ -196,7 +196,7 @@ export default getProducts
 **Time Management**: As I decided for this project to be a solo one, I knew in the beggining that I was not going to spend much time on the design but I have underestimated the time I had and that is why [User dahsbord](https://github.com/lukacspapp/SEI-Project-4-Cicero/blob/main/lcodev/front-end/src/user/UserDashBoard.js) is almost an empty component. Also when user is not logged in and is trying to put an item in a cart by pressing the 'Add to cart' button, in the console it says <code>Log In Please!</code> but does nothing else as I have run out of time.
 
 
-## Wins
+## Wins 🏆
 
 **Project**: I was very proud of myself for putting togeter an MVP in only 9 days with integrated payment, four models while learning a new CSS framework
 
@@ -204,14 +204,14 @@ export default getProducts
 
 
 
-## Key Learnings
+## Key Learnings 📝
 
 * Python Fundamentals: As this was my first project using Python, I had the opportunity to solidify my understanding of it. 
 * File Structuring: This was the first project when I started to have helper files so I can do larger functions and api calls outside of the main components so my code is much cleaner and more readable.
 * React Hooks: After making two React apps, React Hooks introduced a new way of working. I enjoyed using it and will continue to use it in future projects.
 
 
-## Future Improvements
+## Future Improvements 🛠
 
 **Filtering**: Filtering through name/category
 
