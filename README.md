@@ -72,7 +72,7 @@ Solo Project
 
 **_Timeframe_**
 
-7 Days
+9 Days
 
 ## Goal:
 
@@ -225,13 +225,21 @@ class Order(models.Model):
 ```    
 
 
-
-
 ## Frontend
 
-The Frontend was built using React Hooks and for this project, we began working on it at the same time as the backend. This way we could make tweaks to the backend if needed. For example, we wouldn't have realised that we needed to send the width and height of the image to the Backend if we hadn't seen the difference on the page.
+[Frontend Folder](https://github.com/lukacspapp/SEI-Project-4-Cicero/tree/main/lcodev/front-end)
 
-We wanted the styling of Filtr to be extremely slick and like the last project, we used a lot of condition rendering to update the "Edit page" instantly. Before and after images of styling the Edit page:
+The Frontend was built using React Hooks and for the sytling I choosed Bootstrap CSS framework. I only spent 3 days on the frontend as I was previously focusing on the frontend in prevoius projects. I wanted to take this opportunity to learn and practice Django and Python. What I did
+
+### Home Page
+
+[Home Page Component](https://github.com/lukacspapp/SEI-Project-4-Cicero/blob/main/lcodev/front-end/src/core/Home.js)
+
+<img src='https://i.imgur.com/9uTqWSf.png'> 
+
+
+
+
 
 <img src="frontend/src/assets/edit-before.png" alt="edit styling early" width="500px">
 <img src="frontend/src/assets/edit.png" alt="edit styling final" width="600px">
