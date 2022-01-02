@@ -229,7 +229,7 @@ class Order(models.Model):
 
 [Frontend Folder](https://github.com/lukacspapp/SEI-Project-4-Cicero/tree/main/lcodev/front-end)
 
-The Frontend was built using React Hooks and for the sytling I choosed Bootstrap CSS framework. I only spent 3 days on the frontend as I was previously focusing on the frontend in prevoius projects. I wanted to take this opportunity to learn and practice Django and Python. What I did
+The Frontend was built using React Hooks and for the sytling I choosed Bootstrap CSS framework. I only spent 3 days on the frontend as I was previously focusing on the frontend in prevoius projects. I wanted to take this opportunity to learn and practice Django and Python. In order to purchase a hat the user has to be logged in.
 
 ### Home Page
 
@@ -238,7 +238,7 @@ The Frontend was built using React Hooks and for the sytling I choosed Bootstrap
 <img src='https://i.imgur.com/9uTqWSf.png'> 
 
 
-What I did differently in this project is that I called my api outside of the components in a separete file [coreapicalls.js](https://github.com/lukacspapp/SEI-Project-4-Cicero/edit/main/lcodev/front-end/src/core/helper/coreapicalls.js) which is made my code much more readable when I needed to revisit the file.
+What I did differently in this project is that I called my api outside of the components in a separete file [coreapicalls.js](https://github.com/lukacspapp/SEI-Project-4-Cicero/edit/main/lcodev/front-end/src/core/helper/coreapicalls.js) which is made my code much more readable and clean when I needed to revisit the file.
 
 ```
 
@@ -251,65 +251,23 @@ const getProducts = async () => {
 
 export default getProducts
 ```
-
-
-
-
-
-
-<img src="frontend/src/assets/edit-before.png" alt="edit styling early" width="500px">
-<img src="frontend/src/assets/edit.png" alt="edit styling final" width="600px">
-
-We also used [Konva](https://konvajs.org/) to apply CSS filters and Emoji drop features. The below code is a typical example of how we used Konva and conditional rendering on this page:
-
-      <Stage width={width} height={height} ref={stageRef} id="stage">
-        <Layer>
-          <Image
-            ref={imageRef}
-            width={width}
-            height={height}
-            onMouseEnter={showOriginal} // Onhover to show image without filters
-            onMouseLeave={hideOriginal}
-            x={0}
-            y={0}
-            image={im}
-            filters={[
-              Konva.Filters.Blur,
-              Konva.Filters.Brighten,
-              Konva.Filters.Contrast,
-              Konva.Filters.Enhance,
-              Konva.Filters.HSL,
-
-              // * Have to pass the Konva filters a function even if they are not used to surpress warnings in the console.
-              
-              liveEffect.sepiaActive && appliedEffect ? Filters.Sepia : function   () { },
-              liveEffect.embossActive && appliedEffect ?Filters.Emboss  : function () { },
-              liveEffect.grayscaleActive && appliedEffect ? Filters. Grayscale : function () { },
-              liveEffect.invertActive && appliedEffect ? Filters.Invert : function () { }
-
-            ]}
-
-            // * Conditional rendering to set default filters when the image is reset
-
-            blurRadius={appliedEffect ? liveEffect.defaultEffect.blur}
-            brightness={appliedEffect ? liveEffect. brightdefaultEffect.brightness}
-            contrast={appliedEffect ? liveEffect.contdefaultEffect. contrast}
-            embossStrength={appliedEffect ? liveembossStrength : defaultEffect.embossStrength}
-            enhance={appliedEffect ? liveEffect.enhdefaultEffect.enhance}
-            hue={appliedEffect ? liveEffect.hue : defaulthue}
-            saturation={appliedEffect ? liveEffect. saturadefaultEffect.saturation}
-            luminance={appliedEffect ? liveEffect.lumindefaultEffect.luminance}
-          />
-          {images.map((image, i) => {
-            return <URLImage key={i} image={image} />
-          })}
-          </Layer>
-      </Stage>
-
+       
+         
 
 ## Challenges
 
-**Learning about image-editing**: This is a massive topic on its own and one of the tools we used (skicit-image) is typically used by researchers and microscopists. For this reason, there was a lot of trial and error when creating filter settings, documentation reading and stack overflow help that assisted us in getting the right filters.
+**Payment**: Definitely the most challenging was to implement the payment function as I was having difficulties understanding Braintree's documentation, but after rereading, researching, many trial and error I figured it out! I was really happy with this one! For card number please use `4111 1111 1111 1111` and for the expiery date just use a future date exp: 05/25
+
+[Payment file](https://github.com/lukacspapp/SEI-Project-4-Cicero/tree/main/lcodev/api/payment)
+
+<img src='https://i.imgur.com/dVRz3se.png'>
+
+
+
+
+
+
+
 
 **Image Size and quality**: This is something we had not considered during the initial plan -- and a good part of day three and four were spent on ensuring we don't compromise on the quality. The Gaussian filter helped reduce noise on the Tint filter, however, we still haven't found the answer for Histogram filter.
 
