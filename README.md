@@ -52,7 +52,7 @@ https://github.com/lukacspapp/SEI-Project-4-Cicero
 
 ## Idea
 
-For my final project, I wanted to push myself and build an e-commerce application with integrated payment system from [<img src='https://i.imgur.com/6ZIW98d.png' width='30px'>](https://sandbox.braintreegateway.com/)
+For my final project, I wanted to push myself and build an e-commerce application with integrated payment system from [<img src='https://i.imgur.com/6ZIW98d.png' width='20px'> Braintree](https://sandbox.braintreegateway.com/)
 
 
 ## Planning
