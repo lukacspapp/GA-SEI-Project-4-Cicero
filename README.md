@@ -77,8 +77,6 @@ For the wireframes I used Figma to design the pages.
 I decided to concentrate the most on the backend for this project as I was focusing on frontend and design in previous projects
 
 
-Our **MVP** was to ensure that there is a smooth exchange of image data between the frontend and the backend. If we were able to reach that goal quickly, we would add CSS filters.
-
 
 ## Backend
 
