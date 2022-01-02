@@ -57,7 +57,7 @@ For my final project, I wanted to push myself and build an e-commerce applicatio
 
 ## Planning
 
-### Entity-Relationship-Diagram (ERD) https://pbs.twimg.com/profile_images/1110516072178946049/cLRX6_XE_400x400.png
+### Entity-Relationship-Diagram (ERD)
 
 I used Coggle to create the ERD.
 
@@ -68,9 +68,9 @@ I used Coggle to create the ERD.
 
 ### Wireframes
 
-For the Wireframes I used Figma to design the pages.
+For the wireframes I used Figma to design the pages.
 
-[Link ](https://www.figma.com/file/m4Qy4CCQRq71Y7xw1kbif4/ECOMMERCE-Project-4?node-id=0%3A1) to the wireframes
+[<img src='https://i.imgur.com/vKHId13.png' width='20px'> Figma](https://www.figma.com/file/m4Qy4CCQRq71Y7xw1kbif4/ECOMMERCE-Project-4?node-id=0%3A1) to the wireframes
 
 <img src='https://i.imgur.com/cxA5iDw.png'>
 
