@@ -70,7 +70,7 @@ I used Coggle to create the ERD.
 
 For the wireframes I used Figma to design the pages.
 
-[<img src='https://i.imgur.com/vKHId13.png' width='20px'> Figma](https://www.figma.com/file/m4Qy4CCQRq71Y7xw1kbif4/ECOMMERCE-Project-4?node-id=0%3A1) to the wireframes
+[<img src='https://i.imgur.com/vKHId13.png' width='30px'> Figma](https://www.figma.com/file/m4Qy4CCQRq71Y7xw1kbif4/ECOMMERCE-Project-4?node-id=0%3A1) to the wireframes
 
 <img src='https://i.imgur.com/cxA5iDw.png'>
 
