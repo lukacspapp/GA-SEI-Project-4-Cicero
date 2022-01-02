@@ -262,47 +262,30 @@ export default getProducts
 
 <img src='https://i.imgur.com/dVRz3se.png'>
 
-
-
-
-
-
-
-
-**Image Size and quality**: This is something we had not considered during the initial plan -- and a good part of day three and four were spent on ensuring we don't compromise on the quality. The Gaussian filter helped reduce noise on the Tint filter, however, we still haven't found the answer for Histogram filter.
+**Time Management**: As I decided for this project to be a solo one, I knew in the beggining that I was not going to spend much time on the design but I have underestimated the time I had and that is why [User dahsbord](https://github.com/lukacspapp/SEI-Project-4-Cicero/blob/main/lcodev/front-end/src/user/UserDashBoard.js) is almost an empty component. Also when user is not logged in and is trying to put an item in a cart by pressing the 'Add to cart' button, in the console it says <code>Log In Please!</code> but does nothing else as I have run out of time.
 
 
 ## Wins
 
-**TeamWork**: George and I worked extremely well for this project. His experience in Python and my passion for UX helped us make a well-functioning and beautiful product. We organised ourselves using a Trello board with tasks split between "to do, in progress and done" for Front and Back end.
+**Project**: I was very proud of myself for putting togeter an MVP in only 9 days with integrated payment, four models while learning a new CSS framework
 
-**Artist Brush, Meme Filter & CSS filters**: I'm particularly happy with how well these filters turned out. Artist brush is extremely creative + Meme and CSS Filters give quick and fun results!
-
-**Styling**: I LOVE the styling for this website. Even though the little touches (like the filter animation on the homepage) are time-consuming -- It's satisfying and worth it to present a well-designed app!
+**Bootsratp**: I had very little time to get use to another CSS framework but I found it similar to bulma. It was great to learn 3 different frameworks also it was a great learning for reading documentations again!
 
 
 
 ## Key Learnings
 
 * Python Fundamentals: As this was my first project using Python, I had the opportunity to solidify my understanding of it. 
-* Canvas: An extremely powerful JS tool that I had never used before. I look forward to playing around with it more in the future.
+* File Structuring: This was the first project when I started to have helper files so I can do larger functions and api calls outside of the main components so my code is much cleaner and more readable.
 * React Hooks: After making two React apps, React Hooks introduced a new way of working. I enjoyed using it and will continue to use it in future projects.
 
 
 ## Future Improvements
 
-**Histogram Filter**: Our histogram filter needs work, as it's quality is completely dependent on the image uploaded by the user.
+**Filtering**: Filtering through name/category
+
+**User Dashboards Page**: Displaying information about the user
+
+**Display To Log In!**: When a user is trying to add something to the cart display 'Log In Please!' or redirect her/him to the Login Page.
 
 **User Login & Profile**: The backend for this is all ready, so we could easily make an Instagram or Pinterest like profile page.
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
