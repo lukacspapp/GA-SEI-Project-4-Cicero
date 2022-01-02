@@ -205,6 +205,25 @@ class Product(models.Model):
 
 ### Order
 
+[Order File](https://github.com/lukacspapp/SEI-Project-4-Cicero/tree/main/lcodev/api/order)
+
+I designed the order model with the following fields so the admin user would have information on every order
+
+
+[Order Model](https://github.com/lukacspapp/SEI-Project-4-Cicero/blob/main/lcodev/api/order/models.py)
+
+```
+class Order(models.Model):
+    user = models.ForeignKey(CustomUser, on_delete = models.CASCADE, null = True, blank = True)
+    product_names = models.CharField(max_length = 500)
+    total_products = models.CharField(max_length = 500, default = 0)
+    transaction_id = models.CharField(max_length = 200, default = 0)
+    total_amount = models.CharField(max_length = 50, default = 0)
+    created_at = models.DateTimeField(auto_now_add = True)
+    updated_at = models.DateTimeField(auto_now = True)
+    
+```    
+
 
 
 
