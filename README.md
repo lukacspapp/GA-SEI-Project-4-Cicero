@@ -5,7 +5,7 @@ Solo Project
 
 **_Timeframe_**
 
-9 Days
+7 Days
 
 ## Goal:
 
