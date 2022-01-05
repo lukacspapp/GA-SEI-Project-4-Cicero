@@ -9,7 +9,7 @@ Solo Project
 
 ## Goal:
 
-Design a full-stack React app using Python, Django and PostgreSQL.
+Design a full-stack React app using Python, Django, and PostgreSQL.
 
 ## Technologies Used
 
@@ -68,7 +68,7 @@ I used Coggle to create the ERD.
 
 ### Wireframes
 
-For the wireframes I used Figma to design the pages.
+For the wireframes, I used Figma to design the pages.
 
 [<img src='https://i.imgur.com/vKHId13.png' width='30px'> Figma](https://www.figma.com/file/m4Qy4CCQRq71Y7xw1kbif4/ECOMMERCE-Project-4?node-id=0%3A1) to the wireframes
 
@@ -80,13 +80,13 @@ I decided to concentrate the most on the backend for this project as I was focus
 
 ## Backend
 
-On the backend, I have four models: User, Product, Order and Category.
+On the backend, I have four models: User, Product, Order, and Category.
 
 ### User
 
 [User File](https://github.com/lukacspapp/SEI-Project-4-Cicero/tree/main/lcodev/api/user)
 
-Django by defult gives a user model whereby it uses the username to verfy the user. I wanted to use the eamil address to verify the user so I created the a custom user with <code>AbstractUser</code>
+Django by default gives a user model whereby it uses the username to verify the user. I wanted to use the email address to verify the user so I created a custom user with <code>AbstractUser</code>
 
 [User Model](https://github.com/lukacspapp/SEI-Project-4-Cicero/blob/main/lcodev/api/user/models.py)
 
@@ -95,7 +95,7 @@ Django by defult gives a user model whereby it uses the username to verfy the us
     name = models.CharField(max_length = 50, default = 'Customer') 
     email = models.EmailField(max_length = 200, unique = True)
     
-    username = None # because I do not want to sign in the user with username but with EMAIL
+    username = None # because I do not want to sign in the user with a username but with an EMAIL
 
     USERNAME_FIELD = 'email' # so the username field will be governed by the email
     REQUIRED_FIELDS = []
@@ -115,7 +115,7 @@ Django by defult gives a user model whereby it uses the username to verfy the us
 
 [Product File](https://github.com/lukacspapp/SEI-Project-4-Cicero/tree/main/lcodev/api/product)
 
-I designed the product model with a couple of fields that I wanted to display to the user such <code>stock</code> and <code>category</code> but I have run out of time.
+I designed the product model with a couple of fields that I wanted to display to the user such as <code>stock</code> and <code>category</code> but I have run out of time.
 
 
 [Product Model](https://github.com/lukacspapp/SEI-Project-4-Cicero/blob/main/lcodev/api/product/models.py)
@@ -138,7 +138,7 @@ class Product(models.Model):
 
 [Order File](https://github.com/lukacspapp/SEI-Project-4-Cicero/tree/main/lcodev/api/order)
 
-I designed the order model with the following fields so the admin user would have information on every order
+I designed the older model with the following fields so the admin user would have information on every order
 
 
 [Order Model](https://github.com/lukacspapp/SEI-Project-4-Cicero/blob/main/lcodev/api/order/models.py)
@@ -160,7 +160,7 @@ class Order(models.Model):
 
 [Frontend Folder](https://github.com/lukacspapp/SEI-Project-4-Cicero/tree/main/lcodev/front-end)
 
-The Frontend was built using React Hooks and for the sytling I choosed Bootstrap CSS framework. I only spent 3 days on the frontend as I was previously focusing on the frontend in prevoius projects. I wanted to take this opportunity to learn and practice Django and Python. In order to purchase a hat the user has to be logged in.
+The Frontend was built using React Hooks and for the styling, I chose the Bootstrap CSS framework. I only spent 3 days on the frontend as I was previously focusing on the frontend in previous projects. I wanted to take this opportunity to learn and practice Django and Python. In order to purchase a hat, the user has to be logged in.
 
 ### Home Page
 
@@ -169,7 +169,7 @@ The Frontend was built using React Hooks and for the sytling I choosed Bootstrap
 <img src='https://i.imgur.com/9uTqWSf.png'> 
 
 
-What I did differently in this project is that I called my api outside of the components in a separete file [coreapicalls.js](https://github.com/lukacspapp/SEI-Project-4-Cicero/edit/main/lcodev/front-end/src/core/helper/coreapicalls.js) which is made my code much more readable and clean when I needed to revisit the file.
+What I did differently in this project is that I called my API outside of the components in a separate file [coreapicalls.js](https://github.com/lukacspapp/SEI-Project-4-Cicero/edit/main/lcodev/front-end/src/core/helper/coreapicalls.js) which is made my code much more readable and clean when I needed to revisit the file.
 
 ```
 
@@ -187,27 +187,27 @@ export default getProducts
 
 ## Challenges 🧗‍♂️
 
-**Payment**: Definitely the most challenging was to implement the payment function as I was having difficulties understanding Braintree's documentation, but after rereading, researching, many trial and error I figured it out! I was really happy with this one! For card number please use `4111 1111 1111 1111` and for the expiery date just use a future date exp: 05/25
+**Payment**: Definitely the most challenging was to implement the payment function as I was having difficulties understanding Braintree's documentation, but after rereading, researching, many trials and errors I figured it out! I was really happy with this one! For card number please use `4111 1111 1111 1111` and for the expiry date just use a future date exp: 05/25
 
 [Payment file](https://github.com/lukacspapp/SEI-Project-4-Cicero/tree/main/lcodev/api/payment)
 
 <img src='https://i.imgur.com/dVRz3se.png'>
 
-**Time Management**: As I decided for this project to be a solo one, I knew in the beggining that I was not going to spend much time on the design but I have underestimated the time I had and that is why [User dahsbord](https://github.com/lukacspapp/SEI-Project-4-Cicero/blob/main/lcodev/front-end/src/user/UserDashBoard.js) is almost an empty component. Also when user is not logged in and is trying to put an item in a cart by pressing the 'Add to cart' button, in the console it says <code>Log In Please!</code> but does nothing else as I have run out of time.
+**Time Management**: As I decided for this project to be a solo one, I knew in the beginning that I was not going to spend much time on the design but I have underestimated the time I had and that is why [User dahsbord](https://github.com/lukacspapp/SEI-Project-4-Cicero/blob/main/lcodev/front-end/src/user/UserDashBoard.js) is almost an empty component. Also when the user is not logged in and is trying to put an item in a cart by pressing the 'Add to cart button, in the console, it says <code>Log In Please!</code> but does nothing else as I have run out of time.
 
 
 ## Wins 🏆
 
-**Project**: I was very proud of myself for putting togeter an MVP in only 9 days with integrated payment, four models while learning a new CSS framework
+**Project**: I was very proud of myself for putting together an MVP in only 9 days with integrated payment, four models while learning a new CSS framework
 
-**Bootsratp**: I had very little time to get use to another CSS framework but I found it similar to bulma. It was great to learn 3 different frameworks also it was a great learning for reading documentations again!
+**Bootsratp**: I had very little time to get used to another CSS framework but I found it similar to Bulma. It was great to learn 3 different frameworks also it was a great learning for reading documentation again!
 
 
 
 ## Key Learnings 📝
 
 * Python Fundamentals: As this was my first project using Python, I had the opportunity to solidify my understanding of it. 
-* File Structuring: This was the first project when I started to have helper files so I can do larger functions and api calls outside of the main components so my code is much cleaner and more readable.
+* File Structuring: This was the first project when I started to have helper files so I can do larger functions and API calls outside of the main components so my code is much cleaner and more readable.
 * React Hooks: After making two React apps, React Hooks introduced a new way of working. I enjoyed using it and will continue to use it in future projects.
 
 
@@ -218,5 +218,3 @@ export default getProducts
 **User Dashboards Page**: Displaying information about the user
 
 **Display To Log In!**: When a user is trying to add something to the cart display 'Log In Please!' or redirect her/him to the Login Page.
-
-**User Login & Profile**: The backend for this is all ready, so we could easily make an Instagram or Pinterest like profile page.
