@@ -85,7 +85,7 @@ On the backend, I have four models: User, Product, Order, and Category.
 
 [User File](https://github.com/lukacspapp/SEI-Project-4-Cicero/tree/main/lcodev/api/user)
 
-Django by default gives a user model whereby it uses the username to verify the user. I wanted to use the email address to verify the user so I created a custom user with <code>AbstractUser</code>. Also I wanted to create more field such as <code>phone</code> so I could have the phone number of each user.
+Django by default gives a user model whereby it uses the username to verify the user. I wanted to use the email address to verify the user so I created a custom user with <code>AbstractUser</code>. Also, I wanted to create more fields such as <code>phone</code> so I could have the phone number of each user.
 
 [User Model](https://github.com/lukacspapp/SEI-Project-4-Cicero/blob/main/lcodev/api/user/models.py)
 
