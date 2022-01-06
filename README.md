@@ -28,8 +28,7 @@ Design a full-stack React app using Python, Django, and PostgreSQL.
 
 # Cicero
 
-An E-Commerce website that sells hipster hats
-
+An E-Commerce website that sells hipster hats.
 
 <img src='https://i.imgur.com/9uTqWSf.png'>
 
@@ -52,7 +51,7 @@ https://github.com/lukacspapp/SEI-Project-4-Cicero
 
 ## Idea
 
-For my final project, I wanted to push myself and build an e-commerce application with integrated payment system from [<img src='https://i.imgur.com/6ZIW98d.png' width='20px'> Braintree](https://sandbox.braintreegateway.com/)
+For my final project, I wanted to push myself and build an e-commerce application with integrated payment system from [<img src='https://i.imgur.com/6ZIW98d.png' width='20px'> Braintree](https://sandbox.braintreegateway.com/).
 
 
 ## Planning
@@ -74,7 +73,7 @@ For the wireframes, I used Figma to design the pages.
 
 <img src='https://i.imgur.com/cxA5iDw.png'>
 
-I decided to concentrate the most on the backend for this project as I was focusing on frontend and design in previous projects
+I decided to concentrate the most on the backend for this project as I was focusing on frontend and design in previous projects.
 
 
 
@@ -86,7 +85,7 @@ On the backend, I have four models: User, Product, Order, and Category.
 
 [User File](https://github.com/lukacspapp/SEI-Project-4-Cicero/tree/main/lcodev/api/user)
 
-Django by default gives a user model whereby it uses the username to verify the user. I wanted to use the email address to verify the user so I created a custom user with <code>AbstractUser</code>
+Django by default gives a user model whereby it uses the username to verify the user. I wanted to use the email address to verify the user so I created a custom user with <code>AbstractUser</code>. Also I wanted to create more field such as <code>phone</code> so I could have the phone number of each user.
 
 [User Model](https://github.com/lukacspapp/SEI-Project-4-Cicero/blob/main/lcodev/api/user/models.py)
 
@@ -115,8 +114,7 @@ Django by default gives a user model whereby it uses the username to verify the 
 
 [Product File](https://github.com/lukacspapp/SEI-Project-4-Cicero/tree/main/lcodev/api/product)
 
-I designed the product model with a couple of fields that I wanted to display to the user such as <code>stock</code> and <code>category</code> but I have run out of time.
-
+I designed the product model with a couple of fields that I wanted to display to the user such as <code>stock</code> and <code>category</code> but I ran out of time.
 
 [Product Model](https://github.com/lukacspapp/SEI-Project-4-Cicero/blob/main/lcodev/api/product/models.py)
 
@@ -138,7 +136,7 @@ class Product(models.Model):
 
 [Order File](https://github.com/lukacspapp/SEI-Project-4-Cicero/tree/main/lcodev/api/order)
 
-I designed the older model with the following fields so the admin user would have information on every order
+I designed the Order model with the following fields so the admin would have information on each user’s order. That information can be used for marketing purposes or to track an order as well. Each order have the user model in it which means each order has the user information in it as well 
 
 
 [Order Model](https://github.com/lukacspapp/SEI-Project-4-Cicero/blob/main/lcodev/api/order/models.py)
@@ -169,7 +167,7 @@ The Frontend was built using React Hooks and for the styling, I chose the Bootst
 <img src='https://i.imgur.com/9uTqWSf.png'> 
 
 
-What I did differently in this project is that I called my API outside of the components in a separate file [coreapicalls.js](https://github.com/lukacspapp/SEI-Project-4-Cicero/edit/main/lcodev/front-end/src/core/helper/coreapicalls.js) which is made my code much more readable and clean when I needed to revisit the file.
+What I did differently in this project is that I called my API outside of the components in a separate file [coreapicalls.js](https://github.com/lukacspapp/SEI-Project-4-Cicero/edit/main/lcodev/front-end/src/core/helper/coreapicalls.js) which made my code much more readable and clean when I needed to revisit the file.
 
 ```
 
@@ -198,9 +196,9 @@ export default getProducts
 
 ## Wins 🏆
 
-**Project**: I was very proud of myself for putting together an MVP in only 9 days with integrated payment, four models while learning a new CSS framework
+**Project**: I was very proud of myself for putting together an MVP in only 9 days with integrated payment, four models while learning a new CSS framework.
 
-**Bootsratp**: I had very little time to get used to another CSS framework but I found it similar to Bulma. It was great to learn 3 different frameworks also it was a great learning for reading documentation again!
+**Bootsratp**: I had very little time to get used to another CSS framework but I found it similar to Bulma. It was great to learn 3 different frameworks also it was a great learning experience for reading documentation again!
 
 
 
@@ -213,8 +211,8 @@ export default getProducts
 
 ## Future Improvements 🛠
 
-**Filtering**: Filtering through name/category
+**Filtering**: Filtering through name/category.
 
-**User Dashboards Page**: Displaying information about the user
+**User Dashboards Page**: Displaying information about the user.
 
 **Display To Log In!**: When a user is trying to add something to the cart display 'Log In Please!' or redirect her/him to the Login Page.
