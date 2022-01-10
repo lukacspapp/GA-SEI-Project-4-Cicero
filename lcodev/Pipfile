@@ -11,6 +11,7 @@ djangorestframework = "*"
 pillow = "*"
 django = "*"
 braintree = "*"
+django-on-heroku = "*"
 
 [dev-packages]
 
