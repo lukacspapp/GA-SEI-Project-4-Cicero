@@ -41,14 +41,9 @@ https://github.com/lukacspapp/SEI-Project-4-Cicero
 
 - Clone or download the repo
 - <code>cd lcodev</code> to go to the folder
-- <code>pipenv shell</code> to install create a virtual environment 
-- <code>pip install django</code>
-- <code>pip install django-cors-headers</code>
-- <code>pip install djangorestframework</code>
-- <code>pip install braintree</code>
-- <code>pip install pillow</code>
-- <code> python manage.py startserver</code> to start the backend 
-- <code>cd front-end</code> to go to the frontend directory
+- <code>pipenv shell</code> to install Python packages
+- <code> python3 manage.py startserver</code> to start the backend 
+- <code>cd frontend</code> to go to the frontend directory
 - <code>npm i</code> to install frontend dependencies
 - <code>npm start</code> to start the app
 
@@ -141,7 +136,7 @@ class Product(models.Model):
 
 [Order File](https://github.com/lukacspapp/SEI-Project-4-Cicero/tree/main/lcodev/api/order)
 
-I designed the Order model with the following fields so the admin would have information on each user’s order. That information can be used for marketing purposes or to track an order as well. Each order have the user model in it which means each order has the user information in it as well 
+I designed the Order model with the following fields so the admin would have information on each user’s order. That information can be used for marketing purposes or to track an order as well. Each order have the user model in it which means each order has the user information in it as well.
 
 
 [Order Model](https://github.com/lukacspapp/SEI-Project-4-Cicero/blob/main/lcodev/api/order/models.py)
@@ -203,7 +198,7 @@ export default getProducts
 
 **Project**: I was very proud of myself for putting together an MVP in only 9 days with integrated payment, four models while learning a new CSS framework.
 
-**Bootsratp**: I had very little time to get used to another CSS framework but I found it similar to Bulma. It was great to learn 3 different frameworks also it was a great learning experience for reading documentation again!
+**Bootsratp**: I had very little time to get used to another CSS framework but I found it similar to Bulma. It was great to learn 3 different frameworks. It was also a great learning experience for reading documentation again!
 
 
 
