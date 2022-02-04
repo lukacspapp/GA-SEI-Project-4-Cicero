@@ -1,7 +1,7 @@
 
 # General Assembly Project 4: Cicero 👒
 
-Solo Project
+Solo Project - This Project has not been deployed
 
 **_Timeframe_**
 
