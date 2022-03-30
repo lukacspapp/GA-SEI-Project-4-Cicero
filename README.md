@@ -41,8 +41,9 @@ https://github.com/lukacspapp/SEI-Project-4-Cicero
 
 - Clone or download the repo
 - <code>cd lcodev</code> to go to the folder
-- <code>pipenv shell</code> to install Python packages
-- <code> python3 manage.py startserver</code> to start the backend 
+- <code>pipenv shell</code> to create a virtual enviroment
+- <code>pipenv install</code> to install dependencies
+- <code> python3 manage.py runserver</code> to start the backend 
 - <code>cd frontend</code> to go to the frontend directory
 - <code>npm i</code> to install frontend dependencies
 - <code>npm start</code> to start the app
